@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: black;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+
+  ::-webkit-scrollbar{
+      display: none;
+  }
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  .container {
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+
+    section {
+      width: 100vw;
+      height: 100vh;
+      scroll-snap-align: start;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:nth-of-type(1) {
+        background-color: rgb(0, 0, 0);
+        color: white;
+      }
+
+      &:nth-of-type(2) {
+        background-color: rgb(255, 255, 255);
+        color: black;
+      }
+
+      &:nth-of-type(3) {
+        background-color: rgb(21, 31, 46);
+        color: white;
+      }
+
+      &:nth-of-type(4) {
+        background-color: rgb(255, 221, 0);
+        color: black;
+      }
+    }
+  }
+}
