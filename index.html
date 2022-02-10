@@ -10,13 +10,15 @@
     <link rel="icon" type="image/png" href="assets/ryu_logo_sq.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script src="https://cdn.tailwindcss.com"></script>
+
+
 </head>
 
 <body>
 
     <div class="container">
         <!-- main -->
-        <section>
+        <section id="main">
             <div class="flex flex-col">
                 <h1 class="text-white p-6 text-center text-6xl">
                     Welcome to
@@ -26,21 +28,32 @@
                     </span>
                 </h1>
 
-                <p class="text-center p-3"> This is an anime streaming application for watching it on your android phone</p>
+                <p class="text-center p-3"> This is an anime streaming application for watching it on your android phone
+                </p>
 
 
 
                 <button onclick="window.open('https://github.com/ryuu-blue/Ryu/releases/download/v0.1/app-debug.apk')"
                     class="transition ease-in-out delay-150 m-1 p-4 font-bold rounded bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
-                    Download <img class="inline-block h-9" src="https://img.icons8.com/ios-glyphs/30/ffffff/download--v1.png"/>
+                    Download <img class="inline-block h-9"
+                        src="https://img.icons8.com/ios-glyphs/30/ffffff/download--v1.png" />
                 </button>
+
+                <a href="#discord" class="scrollTo">
+                    <div class="scroll-downs p-28">
+                        <div class="mousey border-2 border-white border-solid">
+                            <div class="scroller bg-white"></div>
+                        </div>
+                        Scroll
+                    </div>
+                </a>
 
             </div>
 
         </section>
 
         <!-- Discord -->
-        <section>
+        <section id="discord">
             <div class="flex flex-col">
                 <h1 class="text-black py-6 text-center text-6xl">
                     Join the
@@ -60,11 +73,20 @@
                     on Discord<span> </span> <img src="assets/Discord-Logo-White.svg" alt="Discord" width=40wh
                         height=40vh class="inline-block"> </button>
 
+                <a href="#aniapi" class="scrollTo">
+                    <div class="scroll-downs p-28">
+                        <div class="mousey  border-2 border-black border-solid">
+                            <div class="scroller bg-black"></div>
+                        </div>
+                        Scroll
+                    </div>
+                </a>
+
             </div>
         </section>
 
         <!-- AniApi -->
-        <section>
+        <section id="aniapi">
             <div class="flex flex-col">
                 <h1 class="text-white py-6 text-center text-6xl">
                     Data from
@@ -81,14 +103,23 @@
 
                 <button onclick="window.open('https://aniapi.com/','_blank')"
                     class="transition ease-in-out delay-150 m-1 p-4 font-bold rounded text-white bg-[#ad6dd3] hover:scale-110 hover:bg-[#361c47] duration-300 ">
-                    Website <img class="inline-block h-9" src="https://img.icons8.com/ios/50/ffffff/domain.png"/>
+                    Website <img class="inline-block h-9" src="https://img.icons8.com/ios/50/ffffff/domain.png" />
                 </button>
+
+                <a href="#donation" class="scrollTo">
+                    <div class="scroll-downs p-28">
+                        <div class="mousey  border-2 border-white border-solid">
+                            <div class="scroller bg-white"></div>
+                        </div>
+                        Scroll
+                    </div>
+                </a>
 
             </div>
         </section>
 
         <!-- Donation -->
-        <section>
+        <section id="donation">
             <div class="flex flex-col">
                 <h1 class="py-6 text-center text-6xl">
                     Support
